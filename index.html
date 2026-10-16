@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="images/el-sazon-de-la-abuela.svg" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Encuentra locales de comida en Bogotá con Happy Food.">
+  <title>Happy Food | Encuentra tu próxima comida</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    ¡Descubre nuevos sabores en Bogotá con Happy Food!
+  </div>
+
+  <header class="navbar">
+    <a class="logo" href="#inicio" aria-label="Happy Food, inicio">
+      <span class="logo-mark">🍔</span>
+      <span>Happy Food</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#explorar">Explorar locales</a>
+      <a href="#como-funciona">Cómo funciona</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">TU PRÓXIMA COMIDA TE ESPERA</span>
+
+        <h1>¿Qué se te antoja <span>hoy?</span></h1>
+
+        <p>
+          Encuentra restaurantes y locales de comida en Bogotá.
+          Busca por tipo de comida o por tu barrio y descubre
+          nuevas opciones para disfrutar.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#explorar">
+            Explorar locales
+          </a>
+          <button class="button button-outline" id="location-button" type="button">
+            📍 Usar mi ubicación
+          </button>
+        </div>
+
+        <p class="location-status" id="location-status" aria-live="polite">
+          También puedes buscar escribiendo tu barrio.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="explorar">
+      <div class="section-heading">
+        <span class="eyebrow">ENCUENTRA TU FAVORITO</span>
+        <h2>Explora locales de comida</h2>
+        <p>
+          Desde un almuerzo casero hasta una hamburguesa.
+          Encuentra opciones según lo que quieras comer.
+        </p>
+      </div>
+
+      <div class="search-panel">
+        <label for="search-input">¿Qué quieres comer o dónde quieres buscar?</label>
+
+        <div class="search-row">
+          <input
+            class="search-input"
+            id="search-input"
+            type="search"
+            placeholder="Ej. hamburguesas, pizza, Kennedy..."
+            autocomplete="off"
+          >
+
+          <button class="button button-primary" id="search-button" type="button">
+            Buscar
+          </button>
+        </div>
+
+        <label for="neighborhood-input">Tu barrio o dirección (opcional)</label>
+
+        <div class="search-row">
+          <input
+            class="search-input"
+            id="neighborhood-input"
+            type="text"
+            placeholder="Ej. Kennedy, Bosa, Chapinero..."
+            autocomplete="street-address"
+          >
+
+          <button class="button button-secondary" id="neighborhood-button" type="button">
+            Buscar zona
+          </button>
+        </div>
+
+        <p class="privacy-note">
+          Tú eliges cómo buscar. La ubicación automática requiere tu permiso.
+        </p>
+      </div>
+
+      <div class="category-heading">
+        <h3>¿Qué tipo de comida buscas?</h3>
+        <p>Selecciona una categoría para filtrar los locales.</p>
+      </div>
+
+      <div class="categories" id="categories">
+        <button class="category-btn active" data-category="Todos" type="button">Todos</button>
+        <button class="category-btn" data-category="Corrientazos y almuerzos" type="button">🍛 Corrientazos</button>
+        <button class="category-btn" data-category="Hamburguesas" type="button">🍔 Hamburguesas</button>
+        <button class="category-btn" data-category="Perros calientes" type="button">🌭 Perros calientes</button>
+        <button class="category-btn" data-category="Pollo y asados" type="button">🍗 Pollo y asados</button>
+        <button class="category-btn" data-category="Pizza e italiana" type="button">🍕 Pizza e italiana</button>
+        <button class="category-btn" data-category="Comida típica" type="button">🫓 Comida típica</button>
+        <button class="category-btn" data-category="Desayunos y cafeterías" type="button">☕ Desayunos y cafés</button>
+      </div>
+
+      <div class="results-heading">
+        <div>
+          <h3>Locales para descubrir</h3>
+          <p id="results-count" aria-live="polite">Cargando locales de demostración...</p>
+        </div>
+
+        <button class="text-button" id="clear-filters" type="button">
+          Limpiar filtros
+        </button>
+      </div>
+
+      <div class="product-grid" id="product-grid" aria-live="polite">
+        <p>Cargando locales...</p>
+      </div>
+
+      <p class="demo-notice">
+        <strong>Demostración escolar:</strong> los locales, direcciones,
+        horarios y datos mostrados son ejemplos ficticios. No representan
+        establecimientos verificados ni disponibilidad real.
+      </p>
+    </section>
+
+    <section class="promo" id="como-funciona">
+      <div>
+        <span class="eyebrow">ASÍ DE FÁCIL</span>
+        <h2>Encuentra algo rico cerca de ti</h2>
+        <p>
+          Elige qué quieres comer, busca por tu barrio y revisa
+          las opciones disponibles en el catálogo de demostración.
+        </p>
+        <a class="button button-primary" href="#explorar">Empezar a explorar</a>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+        alt="Variedad de comida servida en una mesa"
+        loading="lazy"
+      >
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <div class="footer-brand">🍔 Happy Food</div>
+      <p>Descubre nuevas opciones de comida en Bogotá.</p>
+    </div>
+
+    <p>Proyecto de demostración escolar · 2026</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

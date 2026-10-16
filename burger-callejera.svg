@@ -1,0 +1,19 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" rx="24" fill="#242424"/>
+  <circle cx="200" cy="104" r="72" fill="#F7C843"/>
+  <path d="M137 96 C137 48 263 48 263 96 Z" fill="#E85D35" stroke="#FFF0C0" stroke-width="5"/>
+  <path d="M143 99 Q200 111 257 99" fill="none" stroke="#F7C843" stroke-width="5"/>
+  <g fill="#FFF0C0">
+    <ellipse cx="172" cy="77" rx="4" ry="2.5"/>
+    <ellipse cx="199" cy="68" rx="4" ry="2.5"/>
+    <ellipse cx="224" cy="81" rx="4" ry="2.5"/>
+  </g>
+  <path d="M139 103 L261 103 L251 119 L149 119 Z" fill="#56A65B"/>
+  <path d="M145 119 Q200 139 255 119 L249 137 L151 137 Z" fill="#E5A23A"/>
+  <path d="M151 137 L249 137 Q245 151 200 151 Q155 151 151 137" fill="#E85D35"/>
+  <text x="200" y="195" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="30" fill="#FFFFFF">BURGER</text>
+  <text x="200" y="229" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="31" fill="#F7C843">CALLEJERA</text>
+  <path d="M94 245 L306 245" stroke="#E85D35" stroke-width="4" stroke-linecap="round"/>
+  <text x="200" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="3" fill="#FFFFFF">SABOR DE BARRIO</text>
+</svg>
